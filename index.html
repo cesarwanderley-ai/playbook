@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Playbook de Inovação para Municípios — César Wanderley</title>
+<meta name="description" content="Cadastre-se para receber o lançamento, condições especiais e materiais do Playbook de Inovação para Municípios, de César Wanderley. Prefácio de Irene Patrícia Nohara.">
+<link rel="icon" href="img/favicon.png" type="image/png">
+
+<!-- Pré-visualização ao compartilhar no WhatsApp / LinkedIn.
+     Troque a URL abaixo pelo endereço final da página. -->
+<meta property="og:type" content="book">
+<meta property="og:title" content="Playbook de Inovação para Municípios">
+<meta property="og:description" content="O guia jurídico-prático para contratar inovação com segurança. Cadastre-se e receba o lançamento em primeira mão.">
+<meta property="og:image" content="img/capa@2x.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  /* Paleta amostrada diretamente da arte da capa */
+  --tinta:#001B18;
+  --tinta-2:#002A25;
+  --verde:#0E5348;
+  --verde-claro:#1E7863;
+  --verde-vivo:#2A9677;
+  --agua:#3AA89C;
+  --ouro:#E9B84A;
+  --ouro-escuro:#C79226;
+  --papel:#F6F8F7;
+  --papel-2:#FFFFFF;
+  --texto:#12211F;
+  --texto-suave:#4A5C59;
+  --borda:#DCE5E2;
+  --sans:'Poppins',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  --serif:'Lora',Georgia,'Times New Roman',serif;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:var(--sans);
+  color:var(--texto);
+  background:var(--papel);
+  -webkit-font-smoothing:antialiased;
+  line-height:1.6;
+}
+img{max-width:100%;height:auto;display:block}
+.envolucro{width:100%;max-width:1160px;margin:0 auto;padding:0 22px}
+
+/* ---------------------------------------------------------------- TOPO */
+.topo{
+  position:relative;
+  color:#fff;
+  background:
+    radial-gradient(120% 90% at 50% 42%, var(--verde-claro) 0%, var(--verde) 34%, var(--tinta-2) 68%, var(--tinta) 100%);
+  overflow:hidden;
+}
+.topo::after{ /* brilho do filamento */
+  content:"";position:absolute;left:50%;top:34%;width:min(620px,90vw);aspect-ratio:1;
+  transform:translate(-50%,-50%);pointer-events:none;
+  background:radial-gradient(circle,rgba(233,184,74,.16) 0%,rgba(233,184,74,0) 62%);
+}
+.marca{
+  position:relative;z-index:2;display:flex;align-items:center;justify-content:space-between;
+  gap:18px;padding:20px 0 4px;
+}
+.marca img{width:104px;opacity:.92}
+.marca span{
+  font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;
+  color:rgba(255,255,255,.72);font-weight:500;
+}
+
+.heroi{
+  position:relative;z-index:2;
+  display:grid;grid-template-columns:1fr;gap:40px;
+  padding:26px 0 64px;
+}
+@media(min-width:900px){
+  .heroi{grid-template-columns:1.02fr .98fr;gap:56px;align-items:center;padding:40px 0 80px}
+}
+
+.selo{
+  display:inline-flex;align-items:center;gap:9px;
+  background:rgba(233,184,74,.13);border:1px solid rgba(233,184,74,.42);
+  color:var(--ouro);border-radius:999px;padding:7px 15px;
+  font-size:.74rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;
+}
+.selo::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--ouro);
+  box-shadow:0 0 0 0 rgba(233,184,74,.65);animation:pulsa 2.6s infinite}
+@keyframes pulsa{
+  0%{box-shadow:0 0 0 0 rgba(233,184,74,.6)}
+  70%{box-shadow:0 0 0 11px rgba(233,184,74,0)}
+  100%{box-shadow:0 0 0 0 rgba(233,184,74,0)}
+}
+
+.heroi h1{
+  font-size:clamp(2.1rem,7.4vw,3.6rem);
+  font-weight:700;line-height:1.04;letter-spacing:-.02em;
+  margin:20px 0 0;text-transform:uppercase;
+}
+.heroi h1 small{
+  display:block;text-transform:none;font-weight:400;
+  font-size:clamp(1rem,3.1vw,1.42rem);letter-spacing:0;line-height:1.32;
+  margin-top:12px;color:rgba(255,255,255,.9);
+}
+.chamada{
+  font-family:var(--serif);font-size:1.04rem;color:rgba(255,255,255,.86);
+  margin:22px 0 0;max-width:34em;
+}
+.atalho{
+  display:inline-flex;align-items:center;gap:10px;margin:26px 0 0;
+  background:var(--ouro);color:var(--tinta);text-decoration:none;
+  font-weight:600;font-size:1rem;border-radius:10px;padding:14px 26px;
+  box-shadow:0 10px 26px rgba(233,184,74,.26);
+  transition:transform .12s,box-shadow .16s,background .16s;
+}
+.atalho:hover{background:#F3C75F;transform:translateY(-1.5px);box-shadow:0 14px 32px rgba(233,184,74,.34)}
+.atalho svg{width:15px;height:15px}
+
+.creditos{
+  margin:26px 0 0;padding-top:20px;border-top:1px solid rgba(255,255,255,.16);
+  display:flex;flex-wrap:wrap;gap:10px 34px;
+}
+.creditos div{font-size:.9rem;color:rgba(255,255,255,.66)}
+.creditos strong{display:block;color:#fff;font-weight:600;font-size:.98rem}
+
+.capa-palco{display:flex;justify-content:center;margin:34px 0 0}
+@media(min-width:900px){.capa-palco{margin:0}}
+.capa-palco img{
+  width:min(290px,68vw);border-radius:3px;
+  box-shadow:0 2px 0 rgba(255,255,255,.14) inset,
+             22px 30px 70px rgba(0,0,0,.55),
+             0 0 90px rgba(58,168,156,.2);
+  transform:rotate(-1.4deg);
+}
+
+/* -------------------------------------------------------------- CADASTRO */
+.cadastro{
+  position:relative;z-index:3;
+  background:var(--papel-2);border-radius:16px;
+  box-shadow:0 26px 70px rgba(0,17,15,.42);
+  padding:28px 24px 26px;
+  margin-top:-34px;
+}
+@media(min-width:900px){.cadastro{padding:34px 32px 30px;margin-top:-64px}}
+.cadastro h2{
+  font-size:1.34rem;font-weight:600;margin:0;letter-spacing:-.01em;color:var(--tinta);
+}
+.cadastro .sub{color:var(--texto-suave);font-size:.94rem;margin:8px 0 22px}
+
+.campos{display:grid;grid-template-columns:1fr;gap:15px}
+@media(min-width:640px){
+  .campos{grid-template-columns:1fr 1fr}
+  .largo{grid-column:1/-1}
+}
+.campo{display:flex;flex-direction:column;gap:6px}
+.campo label{font-size:.83rem;font-weight:600;color:var(--texto)}
+.campo label .opc{font-weight:400;color:#8B9B98}
+.campo input,.campo select{
+  font-family:inherit;font-size:1rem;color:var(--texto);
+  padding:12px 13px;border:1.5px solid var(--borda);border-radius:9px;
+  background:#fff;transition:border-color .16s,box-shadow .16s;width:100%;
+}
+.campo select{appearance:none;cursor:pointer;
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%234A5C59' stroke-width='1.8' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:right 13px center;padding-right:36px}
+.campo input:focus,.campo select:focus{
+  outline:none;border-color:var(--verde-vivo);box-shadow:0 0 0 3.5px rgba(42,150,119,.16)}
+.campo input[aria-invalid="true"],.campo select[aria-invalid="true"]{
+  border-color:#C0392B;box-shadow:0 0 0 3.5px rgba(192,57,43,.12)}
+.erro{font-size:.8rem;color:#C0392B;min-height:0}
+
+.consent{
+  grid-column:1/-1;display:flex;gap:11px;align-items:flex-start;
+  background:#F2F6F5;border:1px solid var(--borda);border-radius:10px;padding:13px 14px;margin-top:3px;
+}
+.consent input{margin-top:3px;width:18px;height:18px;flex:0 0 auto;accent-color:var(--verde-vivo);cursor:pointer}
+.consent label{font-size:.83rem;color:var(--texto-suave);line-height:1.5;font-weight:400;cursor:pointer}
+
+.enviar{
+  grid-column:1/-1;margin-top:8px;
+  font-family:inherit;font-size:1.03rem;font-weight:600;
+  background:linear-gradient(180deg,var(--verde-vivo),var(--verde));
+  color:#fff;border:0;border-radius:10px;padding:15px 20px;cursor:pointer;
+  transition:transform .12s,box-shadow .16s,filter .16s;
+  box-shadow:0 8px 22px rgba(14,83,72,.3);
+}
+.enviar:hover:not(:disabled){transform:translateY(-1.5px);box-shadow:0 12px 28px rgba(14,83,72,.38)}
+.enviar:active:not(:disabled){transform:translateY(0)}
+.enviar:disabled{opacity:.66;cursor:progress}
+.rodape-form{
+  grid-column:1/-1;font-size:.78rem;color:#8B9B98;text-align:center;margin-top:2px;
+}
+.aviso-geral{
+  grid-column:1/-1;font-size:.88rem;border-radius:9px;padding:11px 13px;margin-top:2px;display:none;
+}
+.aviso-geral.ruim{display:block;background:#FDECEA;color:#A5281B;border:1px solid #F5C6C0}
+
+/* Painel de sucesso */
+.sucesso{display:none;text-align:center;padding:14px 4px 8px}
+.sucesso.visivel{display:block}
+.sucesso .marca-ok{
+  width:60px;height:60px;border-radius:50%;margin:0 auto 16px;
+  background:linear-gradient(180deg,var(--verde-vivo),var(--verde));
+  display:grid;place-items:center;
+}
+.sucesso .marca-ok svg{width:28px;height:28px}
+.sucesso h2{margin:0 0 8px}
+.sucesso p{color:var(--texto-suave);font-size:.96rem;margin:0 auto 20px;max-width:38em}
+.compartilhar{
+  font-family:inherit;font-size:.92rem;font-weight:600;color:var(--verde);
+  background:#fff;border:1.5px solid var(--verde-vivo);border-radius:9px;
+  padding:11px 20px;cursor:pointer;transition:background .15s}
+.compartilhar:hover{background:#F0F7F5}
+
+/* ---------------------------------------------------------------- MIOLO */
+.secao{padding:62px 0}
+.secao h2.titulo{
+  font-size:clamp(1.5rem,4.2vw,2rem);font-weight:600;letter-spacing:-.02em;
+  color:var(--tinta);margin:0 0 8px;
+}
+.antetitulo{
+  font-size:.74rem;font-weight:600;letter-spacing:.17em;text-transform:uppercase;
+  color:var(--verde-vivo);margin:0 0 12px;
+}
+
+.cartoes{display:grid;grid-template-columns:1fr;gap:16px;margin-top:32px}
+@media(min-width:700px){.cartoes{grid-template-columns:1fr 1fr}}
+@media(min-width:1000px){.cartoes{grid-template-columns:repeat(3,1fr)}}
+.cartao{
+  background:#fff;border:1px solid var(--borda);border-radius:13px;padding:22px 20px;
+  border-top:3px solid var(--verde-vivo);
+}
+.cartao h3{font-size:1.03rem;font-weight:600;margin:0 0 7px;color:var(--tinta)}
+.cartao p{font-size:.92rem;color:var(--texto-suave);margin:0}
+
+.sinopse{background:var(--tinta);color:#fff}
+.sinopse .titulo{color:#fff}
+.sinopse .antetitulo{color:var(--agua)}
+.sinopse-texto{
+  font-family:var(--serif);font-size:1.06rem;line-height:1.78;
+  color:rgba(255,255,255,.86);max-width:46em;text-align:justify;
+}
+.sinopse-texto p{margin:0 0 18px}
+.citacao{
+  font-family:var(--serif);font-style:italic;font-size:clamp(1.2rem,3.4vw,1.6rem);
+  color:var(--ouro);border-left:3px solid var(--ouro);padding-left:20px;
+  margin:32px 0 0;max-width:24em;line-height:1.4;
+}
+
+.autor{display:grid;grid-template-columns:1fr;gap:26px;align-items:start}
+@media(min-width:760px){.autor{grid-template-columns:180px 1fr;gap:36px}}
+.autor img{width:170px;border-radius:12px;box-shadow:0 12px 30px rgba(0,27,24,.18)}
+.autor p{font-size:.98rem;color:var(--texto-suave);margin:0 0 14px}
+.autor h2{margin-bottom:14px}
+
+.rodape{background:var(--tinta);color:rgba(255,255,255,.6);padding:40px 0;font-size:.85rem}
+.rodape .envolucro{display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-content:space-between}
+.rodape img{width:96px;opacity:.8}
+.rodape a{color:var(--agua);text-decoration:none}
+.rodape a:hover{text-decoration:underline}
+
+/* Campo-armadilha contra robôs de spam: invisível para pessoas */
+.armadilha{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+
+@media(prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+}
+</style>
+</head>
+<body>
+
+<header class="topo">
+  <div class="envolucro">
+    <div class="marca">
+      <img src="img/ceej.png" alt="Editora CEEJ">
+      <span>Pré-lançamento</span>
+    </div>
+
+    <div class="heroi">
+      <div>
+        <p class="selo">Cadastro de interesse</p>
+        <h1>
+          Playbook<br>de Inovação<br>para Municípios
+          <small>O guia jurídico-prático para contratar inovação com segurança.</small>
+        </h1>
+        <p class="chamada">
+          O livro está fechado e a caminho da gráfica. Deixe seu e-mail para saber
+          da data de lançamento, das condições de pré-venda e dos materiais de apoio
+          antes de todo mundo.
+        </p>
+
+        <a class="atalho" href="#cadastro">
+          Quero receber as novidades
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"
+               stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v15M5 12.5L12 19.5 19 12.5"/></svg>
+        </a>
+
+        <div class="creditos">
+          <div>Prefácio de <strong>Irene Patrícia Nohara</strong></div>
+          <div>Apresentação de <strong>Felipe Massami Maruyama</strong></div>
+          <div>Autor <strong>César Wanderley</strong></div>
+        </div>
+      </div>
+
+      <div class="capa-palco">
+        <img src="img/capa.jpg"
+             srcset="img/capa.jpg 620w, img/capa@2x.jpg 1240w"
+             sizes="(min-width:900px) 290px, 68vw"
+             alt="Capa do livro Playbook de Inovação para Municípios, de César Wanderley"
+             width="620" height="877">
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="envolucro">
+    <section class="cadastro" id="cadastro">
+
+      <!-- ---------------------------------------------------- FORMULÁRIO -->
+      <div id="painelFormulario">
+        <h2>Quero receber as novidades do livro</h2>
+        <p class="sub">Leva menos de um minuto. Sem spam, e você sai da lista quando quiser.</p>
+
+        <form id="formulario" class="campos" novalidate>
+
+          <div class="campo largo">
+            <label for="nome">Nome completo</label>
+            <input type="text" id="nome" name="nome" autocomplete="name" required
+                   placeholder="Como você quer ser chamado">
+            <span class="erro" id="erro-nome"></span>
+          </div>
+
+          <div class="campo largo">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" autocomplete="email" required
+                   inputmode="email" placeholder="seu@email.com.br">
+            <span class="erro" id="erro-email"></span>
+          </div>
+
+          <div class="campo">
+            <label for="perfil">Como você atua? <span class="opc">(opcional)</span></label>
+            <select id="perfil" name="perfil">
+              <option value="">Selecione…</option>
+              <option>Gestor ou servidor municipal</option>
+              <option>Servidor estadual ou federal</option>
+              <option>Agente de contratação ou pregoeiro</option>
+              <option>Procurador ou advogado público</option>
+              <option>Controle interno ou externo</option>
+              <option>Advogado ou consultor privado</option>
+              <option>Empresa fornecedora ou startup</option>
+              <option>Professor ou pesquisador</option>
+              <option>Estudante</option>
+              <option>Outro</option>
+            </select>
+          </div>
+
+          <div class="campo">
+            <label for="uf">Estado <span class="opc">(opcional)</span></label>
+            <select id="uf" name="uf">
+              <option value="">Selecione…</option>
+              <option>AC</option><option>AL</option><option>AP</option><option>AM</option>
+              <option>BA</option><option>CE</option><option>DF</option><option>ES</option>
+              <option>GO</option><option>MA</option><option>MT</option><option>MS</option>
+              <option>MG</option><option>PA</option><option>PB</option><option>PR</option>
+              <option>PE</option><option>PI</option><option>RJ</option><option>RN</option>
+              <option>RS</option><option>RO</option><option>RR</option><option>SC</option>
+              <option>SP</option><option>SE</option><option>TO</option>
+            </select>
+          </div>
+
+          <div class="campo largo">
+            <label for="orgao">Órgão ou instituição <span class="opc">(opcional)</span></label>
+            <input type="text" id="orgao" name="orgao" autocomplete="organization"
+                   placeholder="Prefeitura, empresa, universidade…">
+          </div>
+
+          <div class="campo largo">
+            <label for="interesse">O que mais te interessa? <span class="opc">(opcional)</span></label>
+            <select id="interesse" name="interesse">
+              <option value="">Selecione…</option>
+              <option>Exemplar impresso (pré-venda)</option>
+              <option>Exemplar autografado</option>
+              <option>Versão digital / e-book</option>
+              <option>Compra em lote para o meu órgão</option>
+              <option>Curso ou capacitação sobre o tema</option>
+              <option>Palestra ou treinamento no meu órgão</option>
+              <option>Só quero acompanhar as novidades</option>
+            </select>
+          </div>
+
+          <!-- Armadilha anti-robô: se vier preenchido, o envio é descartado -->
+          <div class="armadilha" aria-hidden="true">
+            <label for="sobrenome_meio">Não preencha este campo</label>
+            <input type="text" id="sobrenome_meio" name="sobrenome_meio" tabindex="-1" autocomplete="off">
+          </div>
+
+          <div class="consent">
+            <input type="checkbox" id="consentimento" name="consentimento" required>
+            <label for="consentimento">
+              Autorizo o uso do meu nome e e-mail para receber informações sobre o
+              lançamento, promoções e materiais relacionados a este livro. Posso
+              cancelar a qualquer momento pelo link no rodapé dos e-mails ou
+              escrevendo para o contato indicado nesta página.
+            </label>
+          </div>
+          <span class="erro largo" id="erro-consentimento"></span>
+
+          <div class="aviso-geral" id="avisoGeral" role="alert"></div>
+
+          <button type="submit" class="enviar" id="botaoEnviar">Quero receber as novidades</button>
+
+          <p class="rodape-form">
+            Seus dados ficam apenas com o autor. Nada é vendido ou repassado a terceiros.
+          </p>
+        </form>
+      </div>
+
+      <!-- ------------------------------------------------------- SUCESSO -->
+      <div class="sucesso" id="painelSucesso" role="status" aria-live="polite">
+        <div class="marca-ok">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"
+               stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5.2 5.2L20 7"/></svg>
+        </div>
+        <h2>Cadastro confirmado</h2>
+        <p id="textoSucesso">
+          Pronto! Você entrou na lista e será avisado assim que o livro sair da gráfica.
+          Fique de olho na caixa de entrada, e confira o lixo eletrônico no primeiro e-mail.
+        </p>
+        <button type="button" class="compartilhar" id="botaoCompartilhar">Indicar para um colega</button>
+      </div>
+
+    </section>
+  </div>
+
+  <!-- ------------------------------------------------------ O QUE ENTREGA -->
+  <section class="secao">
+    <div class="envolucro">
+      <p class="antetitulo">O que você encontra no livro</p>
+      <h2 class="titulo">Do problema real ao contrato assinado</h2>
+      <div class="cartoes">
+        <div class="cartao">
+          <h3>Contrato Público para Solução Inovadora</h3>
+          <p>Quando cabe o CPSI, como estruturar o edital e o que o Marco Legal das
+             Startups efetivamente autoriza o município a fazer.</p>
+        </div>
+        <div class="cartao">
+          <h3>Encomenda tecnológica</h3>
+          <p>O caminho para contratar aquilo que ainda não existe no mercado, com
+             risco tecnológico assumido e justificado.</p>
+        </div>
+        <div class="cartao">
+          <h3>Parcerias e instrumentos de fomento</h3>
+          <p>As alternativas à compra direta e os arranjos que aproximam a prefeitura
+             de universidades, ICTs e startups.</p>
+        </div>
+        <div class="cartao">
+          <h3>Propriedade intelectual</h3>
+          <p>De quem fica a solução ao final. Titularidade, licenciamento e as
+             cláusulas que evitam a dependência do fornecedor.</p>
+        </div>
+        <div class="cartao">
+          <h3>Proteção de dados</h3>
+          <p>O que a LGPD exige de um projeto inovador no setor público, e como
+             tratar isso já na fase de planejamento.</p>
+        </div>
+        <div class="cartao">
+          <h3>Matriz de riscos que protege o gestor</h3>
+          <p>A documentação que sustenta a decisão perante o controle e transforma
+             boa intenção em processo defensável.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ------------------------------------------------------------ SINOPSE -->
+  <section class="secao sinopse">
+    <div class="envolucro">
+      <p class="antetitulo">A obra</p>
+      <h2 class="titulo">Escrito para quem sabe o problema e não sabe como agir</h2>
+      <div class="sinopse-texto">
+        <p>
+          Em municípios de todos os tamanhos, há gestores que sabem exatamente qual
+          problema precisam resolver e não dormem tranquilos por não saberem como agir
+          com segurança. Veem a fila da saúde crescer, o processo simples se arrastar, o
+          serviço público deixar de entregar a política pública para quem mais precisa.
+          O que lhes falta não é vontade: é a certeza de que podem agir sem comprometer
+          a própria carreira. Este Playbook nasce para eles, para os procuradores ao seu
+          lado e para os agentes de contratação que sustentam o processo.
+        </p>
+        <p>
+          Rigoroso e generoso ao mesmo tempo, o livro traduz em passos práticos o arsenal
+          que a Lei nº 14.133/2021 e o Marco Legal das Startups já colocaram à disposição:
+          o contrato para solução inovadora, a encomenda tecnológica, as parcerias, o
+          cuidado com propriedade intelectual e proteção de dados e a matriz de riscos que
+          protege o gestor. Inovar no setor público não é privilégio de cidades grandes,
+          mas dever de todos os gestores, protegido pela lei quando se constrói essa
+          solução com técnica e escuta ativa.
+        </p>
+      </div>
+      <blockquote class="citacao">Inovar no setor público não é privilégio: é um dever.</blockquote>
+    </div>
+  </section>
+
+  <!-- -------------------------------------------------------------- AUTOR -->
+  <section class="secao">
+    <div class="envolucro autor">
+      <img src="img/autor.jpg" alt="Retrato de César Wanderley" width="400" height="400">
+      <div>
+        <p class="antetitulo">O autor</p>
+        <h2 class="titulo">César Wanderley</h2>
+        <p>
+          Advogado e cientista de dados, com mais de 19 anos de experiência no setor
+          público. É Agente de Contratação da Prefeitura de Porto Velho, onde foi
+          Superintendente Municipal de Licitações Adjunto, pregoeiro e presidente da
+          Comissão Permanente de Licitação. Escreve a partir de onde a decisão
+          efetivamente acontece.
+        </p>
+        <p>
+          Doutorando em Direito pela PUCPR e mestre pela UNIR. Agente de Contratação
+          certificado pela ENAP e encarregado de proteção de dados certificado pela
+          EXIN. Vice-presidente da Comissão de Direito Administrativo da OAB/RO,
+          professor da Escola Superior da Advocacia de Rondônia e membro fundador da
+          REPALC. Integra o grupo de trabalho da ABNT que constrói a futura norma de
+          Governança das Contratações Públicas Brasileiras.
+        </p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="rodape">
+  <div class="envolucro">
+    <img src="img/ceej.png" alt="Editora CEEJ">
+    <div>
+      Playbook de Inovação para Municípios &middot; César Wanderley &middot; Editora CEEJ<br>
+      Dúvidas ou descadastro: <a href="mailto:cesarwanderley@gmail.com">cesarwanderley@gmail.com</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* =====================================================================
+   CONFIGURAÇÃO
+   Cole abaixo a URL que o Google Apps Script devolve ao publicar o
+   aplicativo da Web (termina em /exec). O passo a passo está no
+   arquivo PASSO_A_PASSO.md.
+   ===================================================================== */
+const CONFIG = {
+  URL_DESTINO: 'https://script.google.com/macros/s/AKfycbyc_nz9C6pRRw2RNK8GgmEUPvnYgRfW2QzFcWViUK2JcWf95gazP-G3Gnfy5UgLzzEf/exec',
+  ORIGEM: 'palestra'   // aparece na planilha; troque por 'instagram', 'aula' etc. em outros links
+};
+
+(function () {
+  'use strict';
+
+  const formulario   = document.getElementById('formulario');
+  const painelForm   = document.getElementById('painelFormulario');
+  const painelOk     = document.getElementById('painelSucesso');
+  const textoOk      = document.getElementById('textoSucesso');
+  const botao        = document.getElementById('botaoEnviar');
+  const avisoGeral   = document.getElementById('avisoGeral');
+
+  /* Permite marcar a origem pela própria URL: ...?origem=instagram */
+  const origem = new URLSearchParams(location.search).get('origem') || CONFIG.ORIGEM;
+
+  const EMAIL_VALIDO = /^[^\s@]+@[^\s@]+\.[a-z]{2,}$/i;
+
+  function marcarErro(idCampo, mensagem) {
+    const campo = document.getElementById(idCampo);
+    const alvo  = document.getElementById('erro-' + idCampo);
+    if (alvo) alvo.textContent = mensagem || '';
+    if (campo) {
+      if (mensagem) campo.setAttribute('aria-invalid', 'true');
+      else campo.removeAttribute('aria-invalid');
+    }
+  }
+
+  function limparErros() {
+    ['nome', 'email', 'consentimento'].forEach(function (c) { marcarErro(c, ''); });
+    avisoGeral.className = 'aviso-geral';
+    avisoGeral.textContent = '';
+  }
+
+  function validar() {
+    limparErros();
+    let ok = true;
+    const nome  = formulario.nome.value.trim();
+    const email = formulario.email.value.trim();
+
+    if (nome.length < 2) { marcarErro('nome', 'Informe seu nome.'); ok = false; }
+    if (!EMAIL_VALIDO.test(email)) { marcarErro('email', 'Informe um e-mail válido.'); ok = false; }
+    if (!formulario.consentimento.checked) {
+      marcarErro('consentimento', 'É preciso autorizar o contato para concluir o cadastro.');
+      ok = false;
+    }
+    if (!ok) {
+      const primeiro = formulario.querySelector('[aria-invalid="true"]');
+      if (primeiro) primeiro.focus();
+    }
+    return ok;
+  }
+
+  function falhar(mensagem) {
+    avisoGeral.className = 'aviso-geral ruim';
+    avisoGeral.textContent = mensagem;
+    botao.disabled = false;
+    botao.textContent = 'Quero receber as novidades';
+  }
+
+  formulario.addEventListener('submit', function (evento) {
+    evento.preventDefault();
+    if (!validar()) return;
+
+    if (!CONFIG.URL_DESTINO || CONFIG.URL_DESTINO.indexOf('COLE_AQUI') === 0) {
+      falhar('A página ainda não foi conectada à planilha. Avise o responsável pelo site.');
+      return;
+    }
+
+    botao.disabled = true;
+    botao.textContent = 'Enviando…';
+
+    const dados = {
+      nome:          formulario.nome.value.trim(),
+      email:         formulario.email.value.trim().toLowerCase(),
+      perfil:        formulario.perfil.value,
+      uf:            formulario.uf.value,
+      orgao:         formulario.orgao.value.trim(),
+      interesse:     formulario.interesse.value,
+      consentimento: formulario.consentimento.checked,
+      armadilha:     formulario.sobrenome_meio.value,
+      origem:        origem,
+      pagina:        location.href
+    };
+
+    /* Enviado como texto simples de propósito: evita a requisição de
+       verificação prévia (preflight) que o Apps Script não responde. */
+    fetch(CONFIG.URL_DESTINO, {
+      method: 'POST',
+      headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+      body: JSON.stringify(dados)
+    })
+      .then(function (resposta) { return resposta.json(); })
+      .then(function (retorno) {
+        if (retorno && retorno.ok) {
+          if (retorno.situacao === 'atualizado') {
+            textoOk.textContent = 'Você já estava na lista, e acabamos de atualizar seus dados. ' +
+              'Pode ficar tranquilo: o aviso do lançamento vai chegar.';
+          }
+          painelForm.style.display = 'none';
+          painelOk.classList.add('visivel');
+          painelOk.scrollIntoView({ block: 'center' });
+        } else {
+          falhar((retorno && retorno.mensagem) || 'Não foi possível concluir o cadastro. Tente de novo.');
+        }
+      })
+      .catch(function () {
+        falhar('Falha na conexão. Verifique a internet e tente novamente.');
+      });
+  });
+
+  /* Botão de indicação: copia o link ou abre o compartilhamento do celular */
+  document.getElementById('botaoCompartilhar').addEventListener('click', function () {
+    const botaoIndicar = this;
+    const conteudo = {
+      title: 'Playbook de Inovação para Municípios',
+      text:  'Livro de César Wanderley sobre como contratar inovação com segurança. Cadastro para o lançamento:',
+      url:   location.origin + location.pathname
+    };
+    if (navigator.share) {
+      navigator.share(conteudo).catch(function () { /* usuário cancelou */ });
+    } else if (navigator.clipboard) {
+      navigator.clipboard.writeText(conteudo.url).then(function () {
+        botaoIndicar.textContent = 'Link copiado!';
+        setTimeout(function () { botaoIndicar.textContent = 'Indicar para um colega'; }, 2600);
+      });
+    }
+  });
+})();
+</script>
+</body>
+</html>
