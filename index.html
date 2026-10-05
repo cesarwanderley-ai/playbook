@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Playbook de Inovação para Municípios — César Wanderley</title>
-<meta name="description" content="Cadastre-se para receber o lançamento, condições especiais e materiais do Playbook de Inovação para Municípios, de César Wanderley. Prefácio de Irene Patrícia Nohara.">
+<meta name="description" content="Compre o e-book do Playbook de Inovação para Municípios, de César Wanderley: o guia jurídico-prático para contratar inovação com segurança. Versão impressa e cursos sob consulta.">
 <link rel="icon" href="img/favicon.png" type="image/png">
 
 <!-- Pré-visualização ao compartilhar no WhatsApp, LinkedIn e Telegram.
@@ -14,7 +14,7 @@
 <meta property="og:locale" content="pt_BR">
 <meta property="og:url" content="https://cesarwanderley-ai.github.io/playbook/">
 <meta property="og:title" content="Playbook de Inovação para Municípios">
-<meta property="og:description" content="O guia jurídico-prático para contratar inovação com segurança. Cadastre-se e receba o lançamento em primeira mão.">
+<meta property="og:description" content="O guia jurídico-prático para contratar inovação com segurança. E-book à venda; versão impressa e cursos sob consulta.">
 <meta property="og:image" content="https://cesarwanderley-ai.github.io/playbook/img/compartilhar.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -128,6 +128,10 @@ img{max-width:100%;height:auto;display:block}
 }
 .atalho:hover{background:#F3C75F;transform:translateY(-1.5px);box-shadow:0 14px 32px rgba(233,184,74,.34)}
 .atalho svg{width:15px;height:15px}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:26px}
+.hero-ctas .atalho{margin-top:0}
+.atalho.secundario{background:transparent;color:#fff;border:1.6px solid rgba(255,255,255,.5);box-shadow:none}
+.atalho.secundario:hover{background:rgba(255,255,255,.12);border-color:#fff;box-shadow:none}
 
 .creditos{
   margin:26px 0 0;padding-top:20px;border-top:1px solid rgba(255,255,255,.16);
@@ -286,27 +290,35 @@ img{max-width:100%;height:auto;display:block}
   <div class="envolucro">
     <div class="marca">
       <img src="img/ceej.png" alt="Editora CEEJ">
-      <span>Pré-lançamento</span>
+      <span>E-book à venda</span>
     </div>
 
     <div class="heroi">
       <div>
-        <p class="selo">Cadastro de interesse</p>
+        <p class="selo">E-book · edição digital</p>
         <h1>
           Playbook<br>de Inovação<br>para Municípios
           <small>O guia jurídico-prático para contratar inovação com segurança.</small>
         </h1>
         <p class="chamada">
-          O livro está fechado e a caminho da gráfica. Deixe seu e-mail para saber
-          da data de lançamento, das condições de pré-venda e dos materiais de apoio
-          antes de todo mundo.
+          O livro já está disponível em e-book: 304 páginas, com base na Lei nº 14.133/2021
+          e no Marco Legal das Startups, do diagnóstico do problema à blindagem do gestor.
+          Compre agora e receba o acesso na hora. Prefere o papel? A versão impressa também
+          está à venda.
         </p>
 
-        <a class="atalho" href="#cadastro">
-          Quero receber as novidades
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"
-               stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v15M5 12.5L12 19.5 19 12.5"/></svg>
-        </a>
+        <div class="hero-ctas">
+          <a class="atalho" href="https://pay.hotmart.com/I107904736W" target="_blank" rel="noopener">
+            Comprar e-book
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"
+                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12.5 5l7 7-7 7"/></svg>
+          </a>
+          <a class="atalho secundario" href="#cadastro" id="btnImpresso">
+            Quero a versão impressa
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"
+                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v15M5 12.5L12 19.5 19 12.5"/></svg>
+          </a>
+        </div>
 
         <div class="creditos">
           <div>Prefácio de <strong>Irene Patrícia Nohara</strong></div>
@@ -328,12 +340,13 @@ img{max-width:100%;height:auto;display:block}
 
 <main>
   <div class="envolucro">
-    <section class="cadastro" id="cadastro">
+    <noscript><style>#cadastro{display:block!important}</style></noscript>
+    <section class="cadastro" id="cadastro" style="display:none">
 
       <!-- ---------------------------------------------------- FORMULÁRIO -->
       <div id="painelFormulario">
-        <h2>Quero receber as novidades do livro</h2>
-        <p class="sub">Leva menos de um minuto. Sem spam, e você sai da lista quando quiser.</p>
+        <h2>Comprar a versão impressa (ou falar sobre um curso)</h2>
+        <p class="sub">O e-book é adquirido ali em cima, pela Hotmart. Este formulário é para quem quer o <strong>exemplar impresso</strong> (inclusive autografado ou em lote) ou para organizarmos um <strong>curso ou palestra in company</strong>. Deixe seu contato que eu retorno com os valores e as condições.</p>
 
         <form id="formulario" class="campos" novalidate>
 
@@ -389,16 +402,15 @@ img{max-width:100%;height:auto;display:block}
           </div>
 
           <div class="campo largo">
-            <label for="interesse">O que mais te interessa? <span class="opc">(opcional)</span></label>
+            <label for="interesse">Sobre o que você quer falar?</label>
             <select id="interesse" name="interesse">
               <option value="">Selecione…</option>
-              <option>Exemplar impresso (pré-venda)</option>
-              <option>Exemplar autografado</option>
-              <option>Versão digital / e-book</option>
+              <option>Exemplar impresso</option>
+              <option>Exemplar impresso autografado</option>
               <option>Compra em lote para o meu órgão</option>
-              <option>Curso ou capacitação sobre o tema</option>
+              <option>Curso ou capacitação in company</option>
               <option>Palestra ou treinamento no meu órgão</option>
-              <option>Só quero acompanhar as novidades</option>
+              <option>Outro assunto</option>
             </select>
           </div>
 
@@ -411,17 +423,16 @@ img{max-width:100%;height:auto;display:block}
           <div class="consent">
             <input type="checkbox" id="consentimento" name="consentimento" required>
             <label for="consentimento">
-              Autorizo o uso do meu nome e e-mail para receber informações sobre o
-              lançamento, promoções e materiais relacionados a este livro. Posso
-              cancelar a qualquer momento pelo link no rodapé dos e-mails ou
-              escrevendo para o contato indicado nesta página.
+              Autorizo o uso do meu nome e e-mail para que o autor entre em contato
+              sobre o exemplar impresso, cursos e palestras relacionados a este livro.
+              Posso cancelar a qualquer momento escrevendo para o contato indicado nesta página.
             </label>
           </div>
           <span class="erro largo" id="erro-consentimento"></span>
 
           <div class="aviso-geral" id="avisoGeral" role="alert"></div>
 
-          <button type="submit" class="enviar" id="botaoEnviar">Quero receber as novidades</button>
+          <button type="submit" class="enviar" id="botaoEnviar">Enviar meu contato</button>
 
           <p class="rodape-form">
             Seus dados ficam apenas com o autor. Nada é vendido ou repassado a terceiros.
@@ -435,10 +446,10 @@ img{max-width:100%;height:auto;display:block}
           <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"
                stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5.2 5.2L20 7"/></svg>
         </div>
-        <h2>Cadastro confirmado</h2>
+        <h2>Contato enviado</h2>
         <p id="textoSucesso">
-          Pronto! Você entrou na lista e será avisado assim que o livro sair da gráfica.
-          Fique de olho na caixa de entrada, e confira o lixo eletrônico no primeiro e-mail.
+          Recebi o seu contato e retorno em breve, pelo e-mail informado, com os valores
+          e o procedimento para o exemplar impresso ou para o curso/palestra.
         </p>
         <button type="button" class="compartilhar" id="botaoCompartilhar">Indicar para um colega</button>
       </div>
@@ -556,7 +567,7 @@ img{max-width:100%;height:auto;display:block}
    ===================================================================== */
 const CONFIG = {
   URL_DESTINO: 'https://script.google.com/macros/s/AKfycbyc_nz9C6pRRw2RNK8GgmEUPvnYgRfW2QzFcWViUK2JcWf95gazP-G3Gnfy5UgLzzEf/exec',
-  ORIGEM: 'palestra'   // aparece na planilha; troque por 'instagram', 'aula' etc. em outros links
+  ORIGEM: 'site'   // aparece na planilha; troque por 'instagram', 'aula' etc. em outros links
 };
 
 (function () {
@@ -571,6 +582,19 @@ const CONFIG = {
 
   /* Permite marcar a origem pela própria URL: ...?origem=instagram */
   const origem = new URLSearchParams(location.search).get('origem') || CONFIG.ORIGEM;
+
+  /* "Quero a versão impressa": revela o formulário (oculto por padrão) e rola até ele */
+  var btnImpresso = document.getElementById('btnImpresso');
+  var secaoForm = document.getElementById('cadastro');
+  if (btnImpresso && secaoForm) {
+    btnImpresso.addEventListener('click', function (ev) {
+      ev.preventDefault();
+      secaoForm.style.display = 'block';
+      secaoForm.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      var primeiro = document.getElementById('nome');
+      if (primeiro) setTimeout(function () { primeiro.focus(); }, 500);
+    });
+  }
 
   const EMAIL_VALIDO = /^[^\s@]+@[^\s@]+\.[a-z]{2,}$/i;
 
@@ -613,7 +637,7 @@ const CONFIG = {
     avisoGeral.className = 'aviso-geral ruim';
     avisoGeral.textContent = mensagem;
     botao.disabled = false;
-    botao.textContent = 'Quero receber as novidades';
+    botao.textContent = 'Enviar meu contato';
   }
 
   formulario.addEventListener('submit', function (evento) {
@@ -652,8 +676,8 @@ const CONFIG = {
       .then(function (retorno) {
         if (retorno && retorno.ok) {
           if (retorno.situacao === 'atualizado') {
-            textoOk.textContent = 'Você já estava na lista, e acabamos de atualizar seus dados. ' +
-              'Pode ficar tranquilo: o aviso do lançamento vai chegar.';
+            textoOk.textContent = 'Recebi o seu contato novamente e atualizei os seus dados. ' +
+              'Logo retorno com os valores e o procedimento.';
           }
           painelForm.style.display = 'none';
           painelOk.classList.add('visivel');
@@ -672,7 +696,7 @@ const CONFIG = {
     const botaoIndicar = this;
     const conteudo = {
       title: 'Playbook de Inovação para Municípios',
-      text:  'Livro de César Wanderley sobre como contratar inovação com segurança. Cadastro para o lançamento:',
+      text:  'Livro de César Wanderley sobre como contratar inovação com segurança:',
       url:   location.origin + location.pathname
     };
     if (navigator.share) {
