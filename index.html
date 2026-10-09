@@ -283,6 +283,14 @@ img{max-width:100%;height:auto;display:block}
   *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
 }
 </style>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','1868779421160143');
+fbq('track','PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1868779421160143&ev=PageView&noscript=1"/></noscript>
+<!-- End Meta Pixel Code -->
 </head>
 <body>
 
@@ -308,7 +316,7 @@ img{max-width:100%;height:auto;display:block}
         </p>
 
         <div class="hero-ctas">
-          <a class="atalho" href="https://pay.hotmart.com/I107904736W" target="_blank" rel="noopener">
+          <a class="atalho" href="https://pay.hotmart.com/I107904736W" target="_blank" rel="noopener" onclick="if(window.fbq)fbq('track','InitiateCheckout');">
             Comprar e-book
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"
                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12.5 5l7 7-7 7"/></svg>
@@ -679,6 +687,7 @@ const CONFIG = {
             textoOk.textContent = 'Recebi o seu contato novamente e atualizei os seus dados. ' +
               'Logo retorno com os valores e o procedimento.';
           }
+          if (window.fbq) fbq('track', 'Lead');
           painelForm.style.display = 'none';
           painelOk.classList.add('visivel');
           painelOk.scrollIntoView({ block: 'center' });
